@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
     private void Shot()
     {
-        GameObject o = Instantiate(prefabBullet, transform.position, transform.rotation);
+        GameObject o = Instantiate(prefabBullet, transform.position, transform.rotation, transform);
         Bullet b = o.GetComponent<Bullet>();
         b.Shot(transform.up);
         
